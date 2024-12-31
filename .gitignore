@@ -1,7 +1,10 @@
 # Ignorar entornos virtuales
 myenv/
+greta/
 
 # Ignorar cachés de Python
 __pycache__/
 *.pyc
 *.pyo
+
+.codegpt

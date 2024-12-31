@@ -1,14 +1,15 @@
+import tensorflow as tf
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
-from tensorflow.keras.models import load_model
 import joblib
 from pathlib import Path
-from tensorflow.keras.losses import MeanSquaredError
+from keras.src.saving.saving_api import load_model
+from keras.src.losses.losses import MeanSquaredError
 
 # Registrar la función de pérdida MSE
-from tensorflow.keras.utils import get_custom_objects
+from keras.src.saving.object_registration import get_custom_objects
 get_custom_objects().update({"mse": MeanSquaredError()})
 
 
